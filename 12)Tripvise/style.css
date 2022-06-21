@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+
+body{
+    font-family: montserrat;
+}
+.navbar-nav a {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+}
+
+.navbar-light .navbar-brand {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover{
+    color: yellow;
+}
+
+/* carousel */
+
+
+.carousel-item{
+    height: 100vh;
+    min-width: 300px;
+}
+
+
+.bg-1{
+    background-image: url("img/1.jpg");
+    background-size: cover;
+}
+.bg-2{
+    background-image: url("img/2.jpg");
+    background-size: cover;
+}
+
+.bg-3{
+    background-image: url("img/3.jpg");
+    background-size: cover;
+}
+
+
+
+.carousel-caption{
+    bottom: 260px;
+    z-index: 2;
+
+}
+
+.carousel-caption h5{
+    font-size: 75px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    margin-top: 50px;
+    font-family: 'Moon Dance', cursive;
+}
+
+.carousel-caption p {
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.9;
+}
+
+.carousel-caption a {
+    font-family: 'Moon Dance', cursive;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 20px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+
+.carousel-caption a:hover {
+        box-shadow: 1px 2px 20px yellow;
+        background-color: #b3b00e;
+        letter-spacing: 3px;
+        transition:  1.5s;
+    }
+    
+
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.carousel-indicators{
+    bottom: 85px;
+}
+
+.carousel-indicators button{
+    width: 100px !important;
+}
+
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    background-color: #FFC54D;
+}
+
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav a {
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+    .carousel-caption {
+        bottom: 240px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 85px;
+    }
+
+    .carousel-indicators{
+        bottom: 65px;
+    }
+
+}
+
+@media  only screen and (min-width:576px) and (max-width:767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav a {
+        margin-top: 5px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .carousel-caption {
+        bottom: 250px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 65px;
+    }
+
+    .carousel-indicators{
+        bottom: 75px;
+    }
+
+}
+
+
+@media  only screen and (min-width:350px) and (max-width:575px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav a {
+        margin-top: 5px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .navbar-brand {
+        margin-left: 25px;
+    }
+
+    .carousel-caption {
+        bottom: 275px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 55px;
+    }
+
+    .carousel-indicators{
+        bottom: 120px;
+    }
+
+}
